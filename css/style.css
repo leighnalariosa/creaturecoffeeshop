@@ -306,7 +306,9 @@ section {
 
 /* HERO SECTION */
 .hero {
-    background: var(--color-hero-bg);
+    background-color: var(--color-hero-bg);
+    background-image: url('../img/gradient.jpg');
+    background-size: cover;
     text-align: center;
 }
 
@@ -363,4 +365,21 @@ section {
     font-weight: normal;
     color: var(--color-accent-color);
     margin: 0;
+}
+
+/* CUSTOM SECTION STYLING */
+.bevs {
+    background-image: url('../img/bg-bevs.png');
+    background-size: cover;
+}
+
+.bevs .row {
+    --gridgap: 150px;
+}
+
+.recipe-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
