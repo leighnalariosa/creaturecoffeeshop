@@ -7,6 +7,8 @@ CSS TABLE OF CONTENTS
     # GLOBAL COLORS 
     # GLOBAL TYPOGRAPHY
     # GLOBAL MEDIA (e.g. images) 
+    # GLOBAL BUTTONS 
+
 
 #LAYOUT
     # MEDIA QUERIES (w/RESPONSIVE TYPOGRAPHY) 
@@ -36,7 +38,7 @@ CSS TABLE OF CONTENTS
     /* BASE COLORS */
     --color-body-background: rgb(255, 255, 255);
     --color-body-text: rgb(0 0 0 / .8);
-    --color-headings: rgb(0 0 0 / 1);
+    --color-headings: rgb(0, 0, 0);
     --color-links: rgb(51 102 204 / 1);
     --color-links-dark: rgb(255, 0, 149);
     --color-brand-color: rgb(255, 141, 232);
@@ -52,8 +54,8 @@ CSS TABLE OF CONTENTS
     --color-hero-bg: rgb(251, 203, 255);
 
     /* BASE TYPOGHRAPHY */
-    --font-body: Helvetica, Arial, sans-serif;
-    --font-headings: Georgia, sans-serif;
+    --font-body: 'futura-pt', Helvetica, Arial, sans-serif;
+    --font-headings: 'futura-pt', Helvetica, Arial, sans-serif;
     --font-hero: 'hwt-arabesque', sans-serif;
 
     /* MEASUREMENT UNITS  */
@@ -80,6 +82,10 @@ h1,
 h2,
 h3 {
     color: var(--color-headings);
+}
+
+h4 {
+    color: white;
 }
 
 a {
@@ -138,6 +144,17 @@ body {
         font-size: 112.5%;
     }
 }
+
+/* BUTTONS */
+.button {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
 
 /* RESPONSIVE IMAGES */
 img {
@@ -201,7 +218,15 @@ img {
 }
 
 .three-fourths {
-    grid-column: span 9 / span 9
+    grid-column: span 9 / span 9;
+}
+
+.col-1-5 {
+    grid-column: 5 / 6;
+}
+
+.col-7-12 {
+    grid-column: 8 / 13;
 }
 
 .one-half.centered {
@@ -368,13 +393,21 @@ section {
 }
 
 /* CUSTOM SECTION STYLING */
+h2.section-headers {
+    font-size: 3em;
+}
+
 .bevs {
     background-image: url('../img/bg-bevs.png');
     background-size: cover;
 }
 
 .bevs .row {
-    --gridgap: 150px;
+    /* --gridgap: 150px; */
+}
+
+.bevs .col-1-5 {
+    text-align: right;
 }
 
 .recipe-list {
@@ -382,4 +415,36 @@ section {
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.services {
+    background-image: url('../img/services-bg.png');
+    background-size: cover;
+}
+
+.services .container {
+    text-align: right;
+}
+
+.about-section {
+    background-image: url('../img/about-bg.png');
+    background-size: cover;
+}
+
+.about-section .container .row .col-1-5 {
+    grid-column: 1 / 6;
+}
+
+.about-section .container .row .col-7-12 {
+    background-image: url('../img/about-bg.png');
+    /* grid-column: 8 / 13;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat; */
+}
+
+.redcreature {
+    width: 1000px;
+    border: 1px solid #d74141;
 }
