@@ -349,6 +349,7 @@ section {
     background-color: var(--color-footer-bg);
     padding: 6em 0;
     color: var(--color-footer-text);
+    list-style: none;
 }
 
 .site-footer .site-nav ul {
