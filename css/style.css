@@ -457,3 +457,9 @@ h2.section-headers {
 .redcreature {
     width: 1000px;
 }
+
+.location-section {
+    background-image: url('../img/location-bg.png');
+    background-size: cover;
+    background-position: center;
+}
