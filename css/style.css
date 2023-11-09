@@ -400,6 +400,7 @@ h2.section-headers {
 .bevs {
     background-image: url('../img/bg-bevs.png');
     background-size: cover;
+    background-position: center;
 }
 
 .bevs .row {
@@ -417,6 +418,16 @@ h2.section-headers {
     color: white;
 }
 
+@media (max-width:767px) {
+    .bevs {
+        background-image: none;
+    }
+
+    .recipe-list {
+        color: rgb(0, 0, 0);
+    }
+}
+
 .services {
     background-image: url('../img/services-bg.png');
     background-size: cover;
@@ -429,19 +440,18 @@ h2.section-headers {
 .about-section {
     background-image: url('../img/about-bg.png');
     background-size: cover;
+    background-position: center;
 }
 
-.about-section .container .row .col-1-5 {
-    grid-column: 1 / 6;
+.about-section .container .row .col-1-7 {
+    grid-column: 1 / 8;
+    grid-row: 1;
+    align-self: end;
 }
 
-.about-section .container .row .col-7-12 {
-    background-image: url('../img/about-bg.png');
-    /* grid-column: 8 / 13;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat; */
+.about-section .container .row .col-5-12 {
+    grid-column: 5 / 13;
+    grid-row: 1;
 }
 
 .redcreature {
