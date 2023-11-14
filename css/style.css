@@ -44,12 +44,12 @@ CSS TABLE OF CONTENTS
     --color-brand-color: rgb(255, 141, 232);
     --color-accent-color: rgb(128, 1, 170);
     --color-header-bg: transparent;
-    --color-header-links: rgb(0, 0, 0);
+    --color-header-links: rgb(255, 255, 255);
     --color-header-links-hover: rgb(0, 0, 0);
     --color-footer-bg: rgb(116, 114, 220);
     --color-footer-heading: rgb(255, 255, 255);
     --color-footer-text: rgb(255, 255, 255);
-    --color-footer-links: rgb(255, 207, 237);
+    --color-footer-links: rgb(255, 255, 255);
     --color-footer-links-hover: rgb(107, 5, 107);
     --color-hero-bg: rgb(251, 203, 255);
 
@@ -81,11 +81,11 @@ body {
 h1,
 h2,
 h3 {
-    color: var(--color-headings);
+    /* color: var(--color-headings); */
 }
 
 h4 {
-    color: white;
+    /* color: white; */
 }
 
 a {
@@ -147,12 +147,12 @@ body {
 
 /* BUTTONS */
 .button {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     padding: 1em;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -307,7 +307,7 @@ img {
 .site-header .site-nav a {
     display: block;
     padding: .5em 2em .6em 2em;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 40px;
     text-transform: lowercase;
     line-height: 1;
@@ -347,6 +347,7 @@ section {
 /* SITE FOOTER */
 .site-footer {
     background-color: var(--color-footer-bg);
+    background-image: url('../img/gradient.jpg');
     padding: 6em 0;
     color: var(--color-footer-text);
     list-style: none;
@@ -396,6 +397,8 @@ section {
 /* CUSTOM SECTION STYLING */
 h2.section-headers {
     font-size: 3em;
+    line-height: 1;
+    margin-bottom: .2em;
 }
 
 .bevs {
@@ -463,4 +466,13 @@ h2.section-headers {
     background-image: url('../img/location-bg.png');
     background-size: cover;
     background-position: center;
+}
+
+.dark-section {
+    color: white;
+}
+
+.dark-section .button {
+    color: white;
+    border-color: white;
 }
