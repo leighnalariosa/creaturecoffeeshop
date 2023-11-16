@@ -28,6 +28,9 @@ CSS TABLE OF CONTENTS
     # WAVE TEXT
 
 # HELPERS
+
+#SUB PAGE STYLING
+    # MENU PAGE 
 */
 
 /* ------------------------ */
@@ -344,7 +347,6 @@ section {
     text-transform: uppercase;
 }
 
-
 /* SITE FOOTER */
 .site-footer {
     background-color: var(--color-footer-bg);
@@ -526,4 +528,14 @@ h2.section-headers {
 /* HELPERS */
 .text-centered {
     text-align: center;
+}
+
+/* -------- */
+/* SUBPAGES */
+/* -------- */
+
+/* MENU PAGE */
+.page-menu .hero {
+    background-image: none;
+    background-color: #20344D;
 }
