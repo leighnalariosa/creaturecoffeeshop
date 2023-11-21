@@ -21,6 +21,7 @@ CSS TABLE OF CONTENTS
     # MAIN
         # SECTIONS
         # HERO SECTION 
+        # LIST
     # FOOTER
 
 # CUSTOM STYLING 
@@ -50,17 +51,17 @@ CSS TABLE OF CONTENTS
     --color-accent-color: rgb(128, 1, 170);
     --color-header-bg: transparent;
     --color-header-links: rgb(255, 255, 255);
-    --color-header-links-hover: rgb(0, 0, 0);
+    --color-header-links-hover: rgba(255, 255, 255, 0);
     --color-footer-bg: rgb(116, 114, 220);
     --color-footer-heading: rgb(255, 255, 255);
     --color-footer-text: rgb(255, 255, 255);
     --color-footer-links: rgb(255, 255, 255);
     --color-footer-links-hover: rgb(107, 5, 107);
-    --color-hero-bg: rgb(0, 0, 0);
+    --color-hero-bg: rgb(255, 255, 255);
 
     /* BASE TYPOGHRAPHY */
-    --font-body: 'futura-pt', Helvetica, Arial, sans-serif;
-    --font-headings: 'futura-pt', Helvetica, Arial, sans-serif;
+    --font-body: 'futura pt', Helvetica, Arial, sans-serif;
+    --font-headings: 'futura pt', Helvetica, Arial, sans-serif;
     --font-hero: 'hwt-arabesque', sans-serif;
 
     /* MEASUREMENT UNITS  */
@@ -311,15 +312,15 @@ img {
 .site-header .site-nav a {
     display: block;
     padding: .5em 2em .6em 2em;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid var(--color-header-links);
     border-radius: 40px;
     text-transform: lowercase;
     line-height: 1;
 }
 
 .site-header .site-nav a:hover {
-    background-color: rgb(255, 255, 255);
-    color: var(--color-hero-bg);
+    background-color: white;
+    color: var(--color-body-text);
 }
 
 /* SITE MAIN */
@@ -345,6 +346,11 @@ section {
     font-size: 10vw;
     color: white;
     text-transform: uppercase;
+}
+
+/* LIST */
+li {
+    list-style: none;
 }
 
 /* SITE FOOTER */
@@ -413,7 +419,9 @@ section {
 h2.section-headers {
     font-size: 3em;
     line-height: 1;
-    margin-bottom: .2em;
+    /* margin-bottom: .2em; */
+    margin: 0;
+    padding: 0;
 }
 
 .bevs {
@@ -435,6 +443,10 @@ h2.section-headers {
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.recipe-list.light {
+    color: var(--color-body-text);
 }
 
 @media (max-width:767px) {
@@ -535,11 +547,26 @@ h2.section-headers {
 /* -------- */
 
 /* MENU PAGE */
+.page-menu {
+    --color-body-text: #20344D;
+    --color-header-links: #E6C8D1;
+    --color-header-links-hover: #E6C8D1;
+    --color-hero-bg: #20344D;
+}
+
 .page-menu .hero {
     background-image: none;
-    background-color: #20344D;
+    background-color: var(--color-hero-bg);
 }
 
 .page-menu .hero .menu-hero {
     color: #E6C8D1;
+}
+
+.page-menu section {
+    background: #E6C8D1;
+}
+
+.page-menu .site-header .site-nav a:hover {
+    background-color: var(--color-header-links-hover);
 }
