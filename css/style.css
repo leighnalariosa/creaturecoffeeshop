@@ -32,6 +32,7 @@ CSS TABLE OF CONTENTS
 
 #SUB PAGE STYLING
     # MENU PAGE 
+    # SERVICES PAGE
 */
 
 /* ------------------------ */
@@ -584,7 +585,7 @@ h2.section-headers {
     background-color: var(--color-hero-bg);
 }
 
-.page-services .hero .menu-hero {
+.page-services .hero .services-hero {
     color: #000000;
 }
 
