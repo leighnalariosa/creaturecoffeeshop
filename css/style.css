@@ -593,3 +593,25 @@ h2.section-headers {
     background-color: black;
     color: #DFFF00;
 }
+
+/* ABOUT PAGE */
+.page-about {
+    --color-body-text: #000000;
+    --color-header-links: #000000;
+    --color-header-links-hover: #EB4B45;
+    --color-hero-bg: #F6CCF8;
+}
+
+.page-about .hero {
+    background-image: none;
+    background-color: var(--color-hero-bg);
+}
+
+.page-about .hero .about-hero {
+    color: #EB4B45;
+}
+
+.page-about .site-header .site-nav a:hover {
+    background-color: #EB4B45;
+    color: #000000;
+}
