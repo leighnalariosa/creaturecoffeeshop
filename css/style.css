@@ -570,3 +570,25 @@ h2.section-headers {
 .page-menu .site-header .site-nav a:hover {
     background-color: var(--color-header-links-hover);
 }
+
+/* SERVICES PAGE */
+.page-services {
+    --color-body-text: #000000;
+    --color-header-links: #000000;
+    --color-header-links-hover: #000000;
+    --color-hero-bg: #DFFF00;
+}
+
+.page-services .hero {
+    background-image: none;
+    background-color: var(--color-hero-bg);
+}
+
+.page-services .hero .menu-hero {
+    color: #000000;
+}
+
+.page-services .site-header .site-nav a:hover {
+    background-color: black;
+    color: #DFFF00;
+}
