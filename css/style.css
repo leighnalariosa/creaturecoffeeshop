@@ -227,13 +227,33 @@ img {
     grid-column: span 9 / span 9;
 }
 
+.row-7-12 {
+    grid-column: 10 / 13;
+    grid-row: 1 / 2;
+}
+
+.row-8-12 {
+    grid-column: 10 / 13;
+    grid-row: 2 / 3;
+}
+
+.row-9-12 {
+    grid-column: 10 / 13;
+    grid-row: 3 / 4;
+}
+
 .col-1-5 {
     grid-column: 5 / 6;
+}
+
+.col-2-6 {
+    grid-column: 2 / 7;
 }
 
 .col-7-12 {
     grid-column: 8 / 13;
 }
+
 
 .one-half.centered {
     grid-column-start: 4;
@@ -348,6 +368,7 @@ section {
     color: white;
     text-transform: uppercase;
 }
+
 
 /* LIST */
 li {
@@ -614,4 +635,56 @@ h2.section-headers {
 .page-about .site-header .site-nav a:hover {
     background-color: #EB4B45;
     color: #000000;
+}
+
+.about {
+    background-image: url('../img/about_left.svg');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    border: 5px solid rgb(31, 179, 70);
+}
+
+/* .about .container {
+    width: 1800px;
+    margin: 0 auto;
+    border: 5px solid rgb(31, 179, 70);
+} */
+
+.our-philosophy {
+    background-image: url('../img/about_right.svg');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    border: 5px solid rgb(31, 179, 70);
+}
+
+/* .our-philosophy .container {
+    width: 1800px;
+    margin: 0 auto;
+    border: 5px solid rgb(31, 179, 70);
+} */
+
+/* CATERING SECTION */
+.catering {
+    background-image: url('../img/services_top.svg');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+/* MERCH SECTION */
+.merchandise {
+    background-image: url('../img/services_left.svg');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
 }
