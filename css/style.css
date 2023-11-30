@@ -195,7 +195,6 @@ img {
 }
 
 .row.swapped>*:first-child {
-
     order: 2;
 }
 
@@ -227,11 +226,6 @@ img {
     grid-column: span 9 / span 9;
 }
 
-.row-7-12 {
-    grid-column: 10 / 13;
-    grid-row: 1 / 2;
-}
-
 .row-8-12 {
     grid-column: 10 / 13;
     grid-row: 2 / 3;
@@ -243,17 +237,32 @@ img {
 }
 
 .col-1-5 {
-    grid-column: 5 / 6;
+    grid-column: 1 / 6;
+}
+
+.col-4-5 {
+    grid-column: 4 / 6;
+}
+
+.col-2-5 {
+    grid-column: 2 / 6;
 }
 
 .col-2-6 {
     grid-column: 2 / 7;
 }
 
+.col-5-8 {
+    grid-column: 5 / 9;
+}
+
+.col-6-12 {
+    grid-column: 6 / 13;
+}
+
 .col-7-12 {
     grid-column: 8 / 13;
 }
-
 
 .one-half.centered {
     grid-column-start: 4;
@@ -672,19 +681,27 @@ h2.section-headers {
 /* CATERING SECTION */
 .catering {
     background-image: url('../img/services_top.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
     padding-bottom: 0;
+}
+
+.cateringimg1 {
+    margin-top: 2em;
 }
 
 /* MERCH SECTION */
 .merchandise {
     background-image: url('../img/services_left.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-repeat: no-repeat;
     padding-top: 0;
 }
