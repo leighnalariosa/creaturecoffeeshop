@@ -818,3 +818,9 @@ ul li,
     color: #F6CCF8;
     border: none;
 }
+
+#location .button:hover {
+    background-color: white;
+    color: #EB4B45;
+    border: none;
+}
