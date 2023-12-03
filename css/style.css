@@ -202,6 +202,12 @@ img {
     order: 1;
 }
 
+.swapped2 {
+    flex-direction: column-reverse;
+    border: 5px solid #ba0000;
+    display: flex;
+}
+
 .one-whole {
     grid-column: span 12 / span 12;
 }
@@ -469,6 +475,13 @@ h2.section-headers {
     text-align: right;
 }
 
+.bevs .button:hover {
+    background-color: #20344D;
+    color: #E6C8D1;
+    border: none;
+}
+
+
 .recipe-list {
     list-style: none;
     margin: 0;
@@ -623,6 +636,30 @@ h2.section-headers {
     background-color: var(--color-header-links-hover);
 }
 
+section.extras {
+    background-color: #FFDBE5;
+    color: #E51277;
+}
+
+.daily-menu h4,
+.special-menu h4 {
+    margin-bottom: 0;
+}
+
+.daily-menu h5,
+.special-menu h5 {
+    margin-top: 0;
+}
+
+.daily-menu ul,
+ul li,
+.special-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /* SERVICES PAGE */
 .page-services {
     --color-body-text: #000000;
@@ -667,6 +704,12 @@ h2.section-headers {
     color: #000000;
 }
 
+.kelli .button:hover {
+    background-color: #EB4B45;
+    color: #F6CCF8;
+    border: none;
+}
+
 .about {
     background-image: url('../img/about_left.svg');
     width: 100%;
@@ -674,7 +717,6 @@ h2.section-headers {
     object-fit: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
-    border: 5px solid rgb(31, 179, 70);
 }
 
 /* .about .container {
@@ -690,7 +732,6 @@ h2.section-headers {
     object-fit: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
-    border: 5px solid rgb(31, 179, 70);
 }
 
 /* .our-philosophy .container {
@@ -721,6 +762,12 @@ h2.section-headers {
     }
 }
 
+.catering .button:hover {
+    background-color: #DFFF00;
+    color: black;
+    border: none;
+}
+
 /* MERCH SECTION */
 .merchandise {
     background-image: url('../img/services_left.gif');
@@ -731,4 +778,43 @@ h2.section-headers {
     height: 100%;
     object-fit: cover;
     padding-top: 0;
+    color: white;
+}
+
+.merchandise .button {
+    border: 1px solid white;
+    color: white;
+}
+
+.merchandise .button:hover {
+    background-color: #DFFF00;
+    color: black;
+    border: none;
+}
+
+/* ABOUT SECTION */
+.kelli {
+    background: #F6CCF8;
+}
+
+.about h2,
+.our-philosophy h2 {
+    color: #F6CCF8;
+}
+
+.kelli h2 {
+    color: #EB4B45;
+}
+
+/* HOME SECTION */
+.services .button:hover {
+    background-color: black;
+    color: #DFFF00;
+    border: none;
+}
+
+.about-section .button:hover {
+    background-color: #EB4B45;
+    color: #F6CCF8;
+    border: none;
 }
