@@ -477,6 +477,10 @@ h2.section-headers {
     background-position: center;
 }
 
+.bevs h2 {
+    color: #E6C8D1;
+}
+
 /* .bevs .row {
     --gridgap: 150px;
 } */
@@ -537,6 +541,10 @@ h2.section-headers {
 .about-section .container .row .col-5-12 {
     grid-column: 5 / 13;
     grid-row: 1;
+}
+
+.about-section h2 {
+    color: #EB4B45;
 }
 
 .redcreature {
