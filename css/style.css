@@ -123,6 +123,8 @@ h1 {
 h2 {
     font-size: 1.875em;
     line-height: 1.2;
+    font-weight: 500;
+    font-style: normal;
 }
 
 h3 {
@@ -160,6 +162,7 @@ body {
     display: inline-block;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    margin-top: 1em;
 }
 
 /* RESPONSIVE IMAGES */
@@ -338,20 +341,27 @@ img {
     color: var(--color-header-links-hover);
 }
 
+.site-header .site-nav {
+    flex-grow: 1;
+}
+
 .site-header .site-nav ul {
     display: flex;
-    gap: 1em;
+    justify-content: flex-end;
+    gap: 1.5vw;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .site-header .site-nav a {
     display: block;
-    padding: .5em 2em .6em 2em;
+    padding: .5em 3.5vw .6em 3.5vw;
     border: 1px solid var(--color-header-links);
     border-radius: 40px;
     text-transform: lowercase;
     line-height: 1;
+    font-size: clamp(.5em, 2vw, 1em);
 }
 
 .site-header .site-nav a:hover {
@@ -641,24 +651,29 @@ section.extras {
     color: #E51277;
 }
 
+section.extras h3 {
+    margin-bottom: 0;
+}
+
 .daily-menu h4,
-.special-menu h4 {
+.special-menu h4,
+.bevs h4 {
     margin-bottom: 0;
 }
 
 .daily-menu h5,
-.special-menu h5 {
+.special-menu h5,
+.bevs h5 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .daily-menu ul,
-ul li,
-.special-menu ul {
+.special-menu ul,
+.bevs ul {
     margin: 0;
     padding: 0;
 }
-
-
 
 /* SERVICES PAGE */
 .page-services {
@@ -711,7 +726,8 @@ ul li,
 }
 
 .about {
-    background-image: url('../img/about_left.svg');
+    background-image: url('../img/about_left.png');
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -726,7 +742,8 @@ ul li,
 } */
 
 .our-philosophy {
-    background-image: url('../img/about_right.svg');
+    background-image: url('../img/about_right.png');
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -754,6 +771,11 @@ ul li,
 
 .cateringimg1 {
     margin-top: 2em;
+}
+
+#catering h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
 }
 
 @media (max-width:767px) {
@@ -790,6 +812,10 @@ ul li,
     background-color: #DFFF00;
     color: black;
     border: none;
+}
+
+.merchandise2 {
+    padding-bottom: 2em;
 }
 
 /* ABOUT SECTION */
