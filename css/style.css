@@ -61,7 +61,7 @@ CSS TABLE OF CONTENTS
     --color-hero-bg: rgb(255, 255, 255);
 
     /* BASE TYPOGHRAPHY */
-    --font-body: "Joesfin Sans", Helvetica, Arial, sans-serif;
+    --font-body: "futura-pt", Helvetica, Arial, sans-serif;
     --font-headings: var(--font-body);
     --font-hero: 'hwt-arabesque', sans-serif;
 
@@ -668,7 +668,7 @@ section.extras h3 {
 .bevs h4 {
     margin-bottom: 0;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .daily-menu h5,
@@ -679,7 +679,7 @@ section.extras h3 {
     font-weight: 600;
     font-style: italic;
     /* font-family: var(--font-body); */
-    font-size: .8em;
+    font-size: .95em;
 }
 
 .daily-menu ul,
@@ -687,7 +687,7 @@ section.extras h3 {
 .bevs ul {
     margin: 0;
     padding: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: .8em;
 }
 
