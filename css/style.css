@@ -503,10 +503,6 @@ h2.section-headers {
     /* color: white; */
 }
 
-.recipe-list li {
-    font-weight: 400;
-}
-
 /* .recipe-list.light {
     color: var(--color-body-text);
 } */
@@ -672,6 +668,7 @@ section.extras h3 {
 .bevs h4 {
     margin-bottom: 0;
     font-weight: 700;
+    font-size: 1.2em;
 }
 
 .daily-menu h5,
@@ -679,8 +676,10 @@ section.extras h3 {
 .bevs h5 {
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 600;
+    font-style: normal;
+    /* font-family: var(--font-body); */
+    font-size: .8em;
 }
 
 .daily-menu ul,
@@ -688,6 +687,8 @@ section.extras h3 {
 .bevs ul {
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    font-size: .8em;
 }
 
 /* SERVICES PAGE */
