@@ -61,8 +61,8 @@ CSS TABLE OF CONTENTS
     --color-hero-bg: rgb(255, 255, 255);
 
     /* BASE TYPOGHRAPHY */
-    --font-body: 'futura pt', futura, Helvetica, Arial, sans-serif;
-    --font-headings: 'futura pt', futura, Helvetica, Arial, sans-serif;
+    --font-body: "Joesfin Sans", Helvetica, Arial, sans-serif;
+    --font-headings: var(--font-body);
     --font-hero: 'hwt-arabesque', sans-serif;
 
     /* MEASUREMENT UNITS  */
@@ -357,7 +357,7 @@ img {
 .site-header .site-nav a {
     display: block;
     padding: .5em 3.5vw .6em 3.5vw;
-    border: 1px solid var(--color-header-links);
+    border: 1.5px solid var(--color-header-links);
     border-radius: 40px;
     text-transform: lowercase;
     line-height: 1;
