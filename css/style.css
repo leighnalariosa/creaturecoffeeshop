@@ -156,8 +156,8 @@ body {
 
 /* BUTTONS */
 .button {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 1em;
+    border: 1.5px solid rgb(0, 0, 0);
+    padding: .7em;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
@@ -503,6 +503,10 @@ h2.section-headers {
     /* color: white; */
 }
 
+.recipe-list li {
+    font-weight: 400;
+}
+
 /* .recipe-list.light {
     color: var(--color-body-text);
 } */
@@ -667,6 +671,7 @@ section.extras h3 {
 .special-menu h4,
 .bevs h4 {
     margin-bottom: 0;
+    font-weight: 700;
 }
 
 .daily-menu h5,
@@ -674,6 +679,8 @@ section.extras h3 {
 .bevs h5 {
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .daily-menu ul,
